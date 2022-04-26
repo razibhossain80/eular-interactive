@@ -1,0 +1,36 @@
+.navbar{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: $white;
+    box-shadow: 0 0 20px #ddd;
+    &__inner{
+        padding: 20px;
+        display: grid;
+        grid-template-columns: auto auto auto 320px auto auto auto;
+        grid-gap: 15px;
+        @include media-breakpoint-down(xl){
+            grid-template-columns: auto auto auto 200px auto auto auto;
+        }
+        @include media-breakpoint-down(lg){
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        }
+        .btn{
+            display: inline-flex;
+            align-items: center;
+            justify-content: flex-start;
+            color: $color-white;
+            min-width: 80px;
+            text-align: left;
+            @include media-breakpoint-down(xl){
+                font-size: 14px;
+            }
+            &.btn-primary{
+                &.modal-active{
+                    background-color: $secondary;
+                }
+            }
+        }
+    }
+}

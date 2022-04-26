@@ -1,0 +1,11 @@
+.btn {
+    svg{
+        width: 18px;
+        height: 18px;
+        margin-right: 5px;
+    }
+    &.btn-light{
+        color: $color-secondary;
+        font-weight: 500;
+    }
+}

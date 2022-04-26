@@ -1,0 +1,98 @@
+.card{
+    background: $primary-gradient;
+    border-radius: 5px;
+    padding: 15px;
+    color: $color-white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    &__inner{
+        flex: 0 0 100%;
+        padding: 15px;
+        border-radius: 5px;
+        border: 1px solid $color-white;
+        text-align: center;
+    }
+    &__number{
+        font-size: 36px;
+        font-weight: bold;
+    }
+    &__content{
+        margin-bottom: 0;
+        font-weight: 500;
+    }
+    &--overflow-number{
+        display: block;
+        height: auto;
+        background: $bg-white;
+        position: relative;
+        border-radius: 0 35px;
+        color: $color-black;
+        border: 2px solid $primary;
+        margin-top: 50px;
+        &::before, &::after{
+            content: "";
+            position: absolute;
+            height: 50px;
+            width: 2px;
+            background: $bg-white;
+        }
+        &::before{
+            left: -2px;
+            top: 0;
+        }
+        &::after{
+            right: -2px;
+            bottom: 0;
+        }
+        .card__inner{
+            &::before{
+                content: "";
+                position: absolute;
+                top: -2px;
+                left: -2px;
+                height: 2px;
+                width: 125px;
+                background: $bg-white;
+            }
+        }
+        .card__number{
+            font-size: 48px;
+            position: absolute;
+            background: $bg-white;
+            transform: translateY(-50%);
+            margin-bottom: 0;
+            top: 0;
+            left: 0;
+            min-width: 100px;
+            text-align: left;
+            background: $primary-gradient;
+            background-clip: text;
+           -webkit-text-fill-color: transparent;
+           @include media-breakpoint-down(xl){
+               font-size: 36px;
+           }
+            &::before{
+                content: "over";
+                color: $color-secondary;
+                border-bottom: 1px solid $color-gray-light;
+                text-align: left;
+                font-size: 14px;
+                position: absolute;
+                top: -20px;
+                border-bottom: 1px solid $color-gray-light;
+                min-width: 100%;
+                left: 0;
+                font-weight: 300;
+                background: $bg-secondary;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                line-height: 20px;
+            }
+        }
+        .card__content{
+            color: $color-secondary;
+            font-style: italic;
+        }
+    }
+}

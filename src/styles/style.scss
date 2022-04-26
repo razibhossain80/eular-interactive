@@ -1,0 +1,32 @@
+
+//global 
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/global';
+@import 'base/utilities';
+@import 'base/generic';
+
+//vendors
+@import 'vendors/bootstrap.scss';
+
+//layout
+@import 'layout/header';
+@import 'layout/sidebar';
+@import 'layout/footer';
+
+//components
+@import 'components/buttons';
+@import 'components/heroHeader';
+@import 'components/navbar';
+@import 'components/modal';
+@import 'components/card';
+@import 'components/tabs';
+@import 'components/carousel';
+@import 'components/headlineText';
+@import 'components/videoCard';
+@import 'components/moa';
+@import 'components/chart';
+
+//pages
+@import 'pages/home'
+

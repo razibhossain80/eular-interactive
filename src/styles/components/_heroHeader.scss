@@ -1,0 +1,29 @@
+.hero-header{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 100px);
+    color: $color-white;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    @include media-breakpoint-down(xl){
+        height: calc(100vh - 130px);
+    }
+    @include media-breakpoint-down(lg){
+        height: calc(100vh - 220px);
+    }
+    &__inner{
+        max-width: 80%;
+    }
+    &__content{
+        padding: 30px 0;
+        h1{
+            font-size: 72px;
+            font-weight: bold;
+            padding: 12px 0;
+            border-top: 6px solid $color-white;
+            border-bottom: 6px solid $color-white;
+            @include media-breakpoint-down(xl)
+        }
+    }
+}

@@ -1,0 +1,29 @@
+ul.list-blue-arrow{
+    list-style: none;
+    padding-left: 12px;
+    li{
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            width: 6px;
+            height: 6px;
+            transform: rotate(45deg);
+            border-top: 2px solid $color-secondary;
+            border-right: 2px solid $color-secondary;
+            left: -12px;
+            top: 10px;
+        }
+    }
+    &.arrow-large{
+        li::before{
+            width: 12px;
+            height: 12px;
+            border-top: 4px solid #005dac;
+            border-right: 4px solid #005dac;
+            left: -18px;
+            top: 13px;
+            border-radius: 3px;
+        }
+    }
+}

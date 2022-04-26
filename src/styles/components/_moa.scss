@@ -1,0 +1,14 @@
+.moa{
+    .section-pad{
+        padding: 80px 60px;
+    }
+    .video-card-group{
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        .video-card{
+            img, video{
+                border-radius: 15px;
+            }
+        }
+    }
+}

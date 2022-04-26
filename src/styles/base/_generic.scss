@@ -1,0 +1,22 @@
+.bullet-warning{
+    list-style: none;
+    padding: 1rem;
+    li{
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            left: -12px;
+            width: 5px;
+            height: 5px;
+            background: $bg-warning;
+            border-radius: 50%;
+            top: 11px;
+        }
+    }
+}
+.pi{
+    p{
+        margin-bottom: 0;
+    }
+}

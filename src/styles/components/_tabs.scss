@@ -1,0 +1,22 @@
+
+    .tab-content{
+        padding: 20px;
+    }
+    .tab-vertical{
+        &__menu{
+            margin-top: 200px;
+            @include media-breakpoint-down(lg){
+                margin-top: 0;
+            }
+        }
+        .nav-link{
+            background: $bg-primary;
+            margin-bottom: 15px;
+            color: $color-white;
+            padding: 15px;
+            cursor: pointer;
+            &.active{
+                background: $bg-secondary;
+            }
+        }
+    }
