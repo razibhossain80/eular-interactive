@@ -2,12 +2,10 @@
 //global 
 @import 'base/variables';
 @import 'base/mixins';
+@import 'vendors/bootstrap.scss';
 @import 'base/global';
 @import 'base/utilities';
 @import 'base/generic';
-
-//vendors
-@import 'vendors/bootstrap.scss';
 
 //layout
 @import 'layout/header';

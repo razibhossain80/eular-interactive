@@ -5,6 +5,7 @@ import StudyImage1 from '../images/study1.svg'
 import StudyImage2 from '../images/study2.svg'
 import StudyImage3 from '../images/study3.svg'
 import Finch from '../images/finch.png'
+import { useEffect, useRef } from 'react'
 
 const StudyDetails = () => {
   return (
@@ -106,17 +107,6 @@ const StudyDetails = () => {
                         <Tab eventKey="primaryEndpoint" title="Primary Endpoint">
                             <h3 className='text-secondary fw-bold'>JYSELECA met its primary endpoint of ACR20 across all Phase 3 trials1</h3>
                             <p>Across all Phase 3 trials, JYSELECA demonstrated significant ACR20 response at Week 12 (FINCH 1 and FINCH 2) and Week 24 (FINCH 3) vs placebo + MTX, placebo + csDMARD, or MTX alone.1</p>
-                            {/* <div className='row'>
-                                <div className='col-md-4'>
-                                    <img src={Finch1} alt="finch1"></img>
-                                </div>
-                                <div className='col-md-4'>
-                                    <img src={Finch2} alt="finch2"></img>
-                                </div>
-                                <div className='col-md-4'>
-                                    <img src={Finch3} alt="finch3"></img>
-                                </div>
-                            </div> */}
                              <img src={Finch} alt="finch"></img>
                             <p className='fs-12 mt-3'>a JYSELECA is not indicated for use in DMARD-naïve patients.</p>
                             <p className='fs-12'>*** P ≤ .001 vs placebo + MTX, placebo + csDMARD, or MTX alone.</p>
