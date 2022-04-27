@@ -4,6 +4,7 @@ import TabVertical from './TabVertical'
 import PatientCard from './PatientCard'
 import Card from './Card'
 import HeroImage from '../images/lion-dt.jpg'
+import TitleImage from '../images/title.png'
 
 const Resources = () => {
   return (
@@ -98,7 +99,8 @@ const Resources = () => {
                 <div className='row aligin-items-center'>
                   <div className='col-md-12 col-xl-6 offset-xl-6'>
                     <div className='hero-header__content'>
-                      <h1>STRENGTH <em className='fw-normal'>of</em> BALANCE</h1>
+                    <img src={TitleImage} alt="title"/>
+                      {/* <h1>STRENGTH <em className='fw-normal'>of</em> BALANCE</h1> */}
                       <ul className='list-blue-arrow arrow-large'>
                         <li>Second-generation, JAK1-preferential inhibitor<sup>1</sup></li>
                         <li>Strong RA therapy <sup>1,2</sup></li>
