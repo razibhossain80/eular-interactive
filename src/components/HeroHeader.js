@@ -29,7 +29,7 @@ const HeroHeader = () => {
                 </div>
             </div>
         </div>
-            <Link className='arrow-next-wrap' to="/">
+            <Link className='arrow-next-wrap' to="/explore">
                 <img src={ArrowNextImage}></img>
             </Link>
     </div>

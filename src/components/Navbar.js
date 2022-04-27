@@ -41,7 +41,7 @@ const Navbar = (props, navbarRef) => {
                         className={`text-center justify-content-center ${studyModalShow ? "modal-active" : ""}`}>STUDY DETAILS</Button>
                     <Button variant='primary' size="md" onClick={handlePiModalShow}
                         className={`text-center justify-content-center ${piModalShow ? "modal-active" : ""}`}>PI</Button>
-                    <img src={Logo} alt="logo"></img>
+                    <img src={Logo} className="logo" alt="logo"></img>
                 </div>
             </div>
             <Modal show={eventModalShow} onHide={handleEventModalClose} backdrop="static" size="lg" centered>

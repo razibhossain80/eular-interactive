@@ -6,6 +6,14 @@ export default function Layout({ children }) {
   const navbarRef = useRef(null)
   const layoutRef = useRef(null)
   useEffect(() => {
+
+    setTimeout(() => {
+      if (typeof window !== 'undefined') {
+        window.location.href = '/';
+      } else {
+        window.location.href = '/';
+      }
+    }, 300000);
     const navbarHeight = navbarRef.current.clientHeight
     // layoutRef.current.style.paddingBottom = `${navbarHeight}px`
     console.log(`Navbar height ${navbarHeight}`)
