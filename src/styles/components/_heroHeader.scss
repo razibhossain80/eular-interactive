@@ -1,4 +1,10 @@
 .hero-header{
+    h1,h2,h3,h4,h5,h6,p{
+        font-family: 'Open Sans', sans-serif;
+    }
+    p{
+        line-height: 20px;
+    }
     background-repeat: no-repeat;
     background-size: cover;
     height: calc(100vh - 100px);
@@ -25,5 +31,15 @@
             border-bottom: 6px solid $color-white;
             @include media-breakpoint-down(xl)
         }
+    }
+    .arrow-next-wrap{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        right: 16px;
+        top: calc(50vh - 50px);
+        width: 60px;
+        height: 60px;
     }
 }

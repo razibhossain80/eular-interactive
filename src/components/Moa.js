@@ -4,6 +4,7 @@ import Chart from './Chart'
 import VideoImg from '../images/video1.png'
 import Balance from '../images/balance.png'
 import Diseases from '../images/diseases.png'
+import GraphImage from '../images/graph2.png'
 
 const Moa = () => {
     return (
@@ -41,7 +42,8 @@ const Moa = () => {
                 <h2 className='fw-bold text-secondary text-center mb-3'>Differential cytokine impact of JAK inhibitors</h2>
                 <p className='fw-bold text-center fs-18'>JYSELECA’s inhibition of JAK1-dependent cytokines IFN-α and IL-6 is comparable to other JAK inhibitors, but with less inhibition of JAK2- and JAK3-dependent cytokines2</p>
                 <Button className='w-100 mb-3' variant='secondary' size="lg">Fold-increase in IC50 a across JAK-associated cytokines2</Button>
-                <Chart/>
+                <img src={GraphImage} alt="graph"/>
+                {/* <Chart/> */}
                 <p className='fs-12 mt-3'>Adapted from Traves et al.2</p>
                 <p className='fs-12'>Data are based on in vitro whole-blood assays; clinical relevance is unknown. There are currently no head-to-head trials between JAK inhibitors. a IC50 indicates how much of a specific pharmacologic agent is required to inhibit a given biological activity by half.</p>
                 <p className='fs-12'>b Data are normalised against IFN-α.</p>

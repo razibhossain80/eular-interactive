@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Atoms / Buttons / Global / Bottom Nav / Home</title>
+    <g id="Interactive-Booth" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="0.0-Cover-Page---Screensaver" transform="translate(-42.000000, -995.000000)">
+            <g id="Molecules-/-Menu-/-Bottom-Nav" transform="translate(0.000000, 950.000000)">
+                <g id="Group" transform="translate(20.000000, 25.000000)">
+                    <g transform="translate(12.000000, 10.000000)" id="Atoms-/-Buttons-/-Global-/-Bottom-Nav-/-Home">
+                        <rect id="Rectangle" x="0" y="0" width="60" height="60"></rect>
+                        <path d="M49.5,24.0704762 L30,10.1573342 L10.5,24.0704762 L10.5,49.5 L49.5,49.5 L49.5,24.0704762 Z M30,13.84275 L46.5,25.61475 L46.5,46.5 L13.5,46.5 L13.5,25.614 L30,13.84275 Z" id="Combined-Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,11 +1,10 @@
 import React from 'react'
 import {Tabs, Tab } from 'react-bootstrap'
 import Card from './Card'
-import ImgStudy from '../images/study.png'
+import StudyImage1 from '../images/study1.svg'
+import StudyImage2 from '../images/study2.svg'
+import StudyImage3 from '../images/study3.svg'
 import Finch from '../images/finch.png'
-// import Finch1 from '../images/finch1.png'
-// import Finch2 from '../images/finch2.png'
-// import Finch3 from '../images/finch3.png'
 
 const StudyDetails = () => {
   return (
@@ -70,7 +69,7 @@ const StudyDetails = () => {
                             <p>Three Phase 3, randomised, double-blind, placebo-controlled trials in adult patients with moderate to severe active RA.<sup>1</sup></p>
                             <div className='row'>
                                 <div className='col-md-4'>
-                                    <img src={ImgStudy} alt="study details"></img>
+                                    <img src={StudyImage1} alt="study details"></img>
                                     <p>Patients with inadequate response to MTX (<span>MTX-IR</span>) randomised to1:</p>
                                     <ul>
                                         <li>JYSELECA 200 mg + MTX</li>
@@ -80,7 +79,7 @@ const StudyDetails = () => {
                                     </ul>
                                 </div>
                                 <div className='col-md-4'>
-                                    <img src={ImgStudy} alt="study details"></img>
+                                    <img src={StudyImage2} alt="study details"></img>
                                     <p>Patients with inadequate response to bDMARDs (<span>Biologic-IR</span>) randomised to1:</p>
                                     <ul>
                                         <li>JYSELECA 200 mg + MTX</li>
@@ -89,7 +88,7 @@ const StudyDetails = () => {
                                     </ul>
                                 </div>
                                 <div className='col-md-4'>
-                                    <img src={ImgStudy} alt="study details"></img>
+                                    <img src={StudyImage3} alt="study details"></img>
                                     <p>Patients naïve to MTX therapy (<span>MTX-Naïve*</span>) randomised to1:</p>
                                     <ul>
                                         <li>JYSELECA 200 mg + MTX</li>

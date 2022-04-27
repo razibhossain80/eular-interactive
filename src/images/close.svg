@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 3</title>
+    <defs>
+        <path d="M23.2076222,0.781048584 C24.2289091,1.78773342 24.262952,3.39904291 23.3097509,4.44603606 L23.2076222,4.55228475 L15.825,11.828 L16,12 L15.825,12.171 L23.2076222,19.4477153 C24.2289091,20.4544001 24.262952,22.0657096 23.3097509,23.1127027 L23.2076222,23.2189514 C22.1863353,24.2256363 20.5516535,24.2591924 19.4894736,23.3196199 L19.3816838,23.2189514 L11.999,15.943 L4.61831623,23.2189514 L4.51052639,23.3196199 C3.44834647,24.2591924 1.81366473,24.2256363 0.792377795,23.2189514 L0.792377795,23.2189514 L0.690249101,23.1127027 C-0.262952039,22.0657096 -0.228909141,20.4544001 0.792377795,19.4477153 L0.792377795,19.4477153 L8.173,12.172 L8,12 L8.174,11.828 L0.792377795,4.55228475 L0.690249101,4.44603606 C-0.262952039,3.39904291 -0.228909141,1.78773342 0.792377795,0.781048584 C1.84888152,-0.260349528 3.56181251,-0.260349528 4.61831623,0.781048584 L4.61831623,0.781048584 L11.999,8.057 L19.3816838,0.781048584 C20.4381875,-0.260349528 22.1511185,-0.260349528 23.2076222,0.781048584 Z" id="path-1"></path>
+        <filter x="-72.9%" y="-52.1%" width="245.8%" height="245.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Interactive-Booth" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="0.3-Tab-2---Study-Details-Popup---Study-Design" transform="translate(-1690.000000, -83.000000)" fill-rule="nonzero">
+            <g id="Molecules-/-Popup-/-References" transform="translate(180.000000, 76.000000)">
+                <g id="Combined-Shape" transform="translate(1520.000000, 12.000000)">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

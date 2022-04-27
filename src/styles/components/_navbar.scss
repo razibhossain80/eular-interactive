@@ -3,15 +3,16 @@
     left: 0;
     bottom: 0;
     right: 0;
+    z-index: 2;
     background: $white;
     box-shadow: 0 0 20px #ddd;
     &__inner{
         padding: 20px;
         display: grid;
-        grid-template-columns: auto auto auto 320px auto auto auto;
+        grid-template-columns: auto 200px auto 320px auto auto auto;
         grid-gap: 15px;
         @include media-breakpoint-down(xl){
-            grid-template-columns: auto auto auto 200px auto auto auto;
+            grid-template-columns: auto 200px auto 200px auto auto auto;
         }
         @include media-breakpoint-down(lg){
             grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -23,12 +24,18 @@
             color: $color-white;
             min-width: 80px;
             text-align: left;
+            line-height: 18px;
             @include media-breakpoint-down(xl){
                 font-size: 14px;
             }
             &.btn-primary{
                 &.modal-active{
                     background-color: $secondary;
+                }
+                img{
+                    width: 24px;
+                    height: 24px;
+                    margin-right: 10px;
                 }
             }
         }

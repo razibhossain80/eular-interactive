@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Atoms / Buttons / Global / Bottom Nav / Resources</title>
+    <g id="Interactive-Booth" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="0.0-Cover-Page---Screensaver" transform="translate(-552.000000, -992.000000)">
+            <g id="Molecules-/-Menu-/-Bottom-Nav" transform="translate(0.000000, 950.000000)">
+                <g id="Group-Copy-4" transform="translate(533.000000, 25.000000)">
+                    <g id="Atoms-/-Buttons-/-Global-/-Bottom-Nav-/-Home" transform="translate(12.000000, 10.000000)">
+                        <g id="Rectangle">
+                            <rect x="0" y="0" width="60" height="60"></rect>
+                        </g>
+                        <path d="M27,7.5 L27,27 L7.5,27 L7.5,7.5 L27,7.5 Z M24,10.5 L10.5,10.5 L10.5,24 L24,24 L24,10.5 Z" id="Rectangle" fill="#FFFFFF" fill-rule="nonzero"></path>
+                        <path d="M27,33 L27,52.5 L7.5,52.5 L7.5,33 L27,33 Z M24,36 L10.5,36 L10.5,49.5 L24,49.5 L24,36 Z" id="Rectangle-Copy-2" fill="#FFFFFF" fill-rule="nonzero"></path>
+                        <path d="M52.5,7.5 L52.5,27 L33,27 L33,7.5 L52.5,7.5 Z M49.5,10.5 L36,10.5 L36,24 L49.5,24 L49.5,10.5 Z" id="Rectangle-Copy" fill="#FFFFFF" fill-rule="nonzero"></path>
+                        <path d="M52.5,33 L52.5,52.5 L33,52.5 L33,33 L52.5,33 Z M49.5,36 L36,36 L36,49.5 L49.5,49.5 L49.5,36 Z" id="Rectangle-Copy-3" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

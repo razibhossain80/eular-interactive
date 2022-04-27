@@ -1,26 +1,23 @@
 import React from 'react'
-import {useState} from 'react'
+import {Link} from 'gatsby'
 import { Button } from 'react-bootstrap'
 import HeroImage from '../images/lion-dt.jpg'
-import {Modal} from 'react-bootstrap'
+import TitleImage from '../images/title.png'
+import ArrowNextImage from '../images/arrow-next.png'
 
 const HeroHeader = () => {
-    const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-
   return (
     <div className='hero-header' style={{backgroundImage: `url(${HeroImage})`}}>
         <div className='container-fluid hero-header__inner'>
             <div className='row aligin-items-center'>
                 <div className='col-md-12 col-xl-6 offset-xl-6'>
                     <div className='hero-header__content'>
-                        <h1>STRENGTH <em className='fw-normal'>of</em> BALANCE</h1>
+                      <img src={TitleImage} alt="title"/>
+                        {/* <h1>STRENGTH <em className='fw-normal'>of</em> BALANCE</h1> */}
                         <p className='fw-bold fs-22'>Strong RA therapy with a proven safety profile</p>
                         <p className='fw-500'>JYSELECA is indicated for the treatment of moderate to severe active rheumatoid arthritis in adult patients who have responded inadequately to, or who are intolerant to one or more disease-modifying antirheumatic drugs (DMARDs). JYSELECA may be used as monotherapy or in combination with methotrexate (MTX).1</p>
                         <p className='fw-500'>Reporting suspected adverse reactions after authorisation of the medicinal product is important. It allows continued monitoring of the benefit/risk balance of the medicinal product. Healthcare professionals are asked to report any suspected adverse reactions via the national reporting systems and to DrugSafety.Global@glpg.com.</p>
-                        <Button className='w-100' variant='secondary' size="lg">EXPLORE HOW JYSELECA HELP YOUR PATIENTS</Button>
+                        <Link to="/explore" className='w-100 btn btn-secondary btn-lg'>EXPLORE HOW JYSELECA HELP YOUR PATIENTS</Link>
                     </div>
                 </div>
             </div>
@@ -32,22 +29,9 @@ const HeroHeader = () => {
                 </div>
             </div>
         </div>
-
-      <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
-          </Button>
-        </Modal.Footer>
-      </Modal>
-
+            <Link className='arrow-next-wrap' to="/">
+                <img src={ArrowNextImage}></img>
+            </Link>
     </div>
   )
 }

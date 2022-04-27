@@ -7,6 +7,7 @@ import HeroImage from '../images/lion-dt.jpg'
 
 const Resources = () => {
   return (
+    <div className='carousel-wrap'>
     <Carousel variant="dark" interval={null}>
         <Carousel.Item>
           <div className='carousel-item__inner first-slide'>
@@ -22,7 +23,7 @@ const Resources = () => {
                 </div>
                 <div className='col-md-6'>
                   <Card cardType="overflow-number">
-                    <h3 className='card__number'>36%</h3>
+                    <h3 className='card__number'>36% <sup>$</sup></h3>
                     <p className='card__content'>of patients achieved <strong>ACR70</strong> vs 30% with adalimumab + MTX</p>
                   </Card>
                 </div>
@@ -34,7 +35,7 @@ const Resources = () => {
                 </div>
                 <div className='col-md-6'>
                   <Card cardType="overflow-number">
-                    <h3 className='card__number'>48%</h3>
+                    <h3 className='card__number'>48% <sup>$$$</sup></h3>
                     <p className='card__content'>of patients achieved <strong>remission</strong>  (DAS28-CRP 2.6) vs 36% with adalimumab + MTX</p>
                   </Card>
                 </div>
@@ -91,9 +92,9 @@ const Resources = () => {
           </div>
         </Carousel.Item>
         <Carousel.Item>
-          <div className='carousel-item__inner forth-slide'>
-            <div className='hero-header' style={{ backgroundImage: `url(${HeroImage})` }}>
-              <div className='container-fluid hero-header__inner'>
+          <div className='carousel-item__inner forth-slide' style={{ backgroundImage: `url(${HeroImage})` }}>
+            <div className='hero-header'>
+              <div className='container-fluid hero-header__inner w-100'>
                 <div className='row aligin-items-center'>
                   <div className='col-md-12 col-xl-6 offset-xl-6'>
                     <div className='hero-header__content'>
@@ -124,6 +125,7 @@ const Resources = () => {
           </div>
         </Carousel.Item>
       </Carousel>
+    </div>
   )
 }
 

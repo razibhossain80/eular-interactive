@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="42px" viewBox="0 0 40 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Atoms / Buttons / Global / Bottom Nav /Event Schedule </title>
+    <g id="Interactive-Booth" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="0.0-Cover-Page---Screensaver" transform="translate(-243.000000, -994.000000)">
+            <g id="Molecules-/-Menu-/-Bottom-Nav" transform="translate(0.000000, 950.000000)">
+                <g id="Group-Copy" transform="translate(221.000000, 25.000000)">
+                    <g id="Atoms-/-Buttons-/-Global-/-Bottom-Nav-/-Home" transform="translate(12.000000, 10.000000)">
+                        <g id="Atoms-/-Buttons-/-Global-/-Bottom-Nav-/-References">
+                            <rect id="Rectangle" x="0" y="0" width="60" height="60"></rect>
+                        </g>
+                        <g id="Group" transform="translate(10.500000, 9.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                            <path d="M39,15 L39,42 L0,42 L0,15 L39,15 Z M36,18 L3,18 L3,39 L36,39 L36,18 Z" id="Rectangle"></path>
+                            <path d="M39,3 L39,18 L0,18 L0,3 L39,3 Z M36,6 L3,6 L3,15 L36,15 L36,6 Z" id="Rectangle-Copy"></path>
+                            <polygon id="Path-5" points="30.7519184 0 30.7519184 9 27.7519184 9 27.7519184 0"></polygon>
+                            <polygon id="Path-5-Copy" points="11.625 0 11.625 9 8.625 9 8.625 0"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -89,6 +89,16 @@
                 -webkit-text-fill-color: transparent;
                 line-height: 20px;
             }
+            sup{
+                background: $bg-secondary;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 22px;
+                font-weight: normal;
+                top: -30px;
+                left: -10px;
+            }
         }
         .card__content{
             color: $color-secondary;

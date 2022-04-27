@@ -8,4 +8,9 @@
         color: $color-secondary;
         font-weight: 500;
     }
+    &-close{
+        opacity: 1;
+        background-image: url("../images/close.svg");
+        background-size: contain;
+    }
 }

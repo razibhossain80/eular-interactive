@@ -1,119 +1,132 @@
-.carousel{
-    .carousel-inner{
+.carousel-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  .carousel {
+      flex: 0 0 100%;
+    .carousel-item {
+      &__inner {
         padding: 50px 100px 100px;
-        @include media-breakpoint-down(xl){
-            padding: 50px 85px 130px;
+        @include media-breakpoint-down(xl) {
+          padding: 50px 85px 130px;
         }
-        @include media-breakpoint-down(lg){
-            padding: 50px 85px 220px;
+        @include media-breakpoint-down(lg) {
+          padding: 50px 85px 220px;
         }
+        &.first-slide .card-group {
+          width: 65%;
+          margin: auto;
+          @include media-breakpoint-down(xl) {
+            width: 90%;
+          }
+        }
+        &.second-slide,
+        &.third-slide {
+          .card--overflow-number .card__inner::before {
+            width: 70%;
+          }
+        }
+        &.third-slide {
+          .patient-card {
+            width: 70%;
+            margin: auto;
+            @include media-breakpoint-down(xl) {
+              width: 90%;
+            }
+            &__content {
+              position: relative;
+              padding: 25px 75px 25px 25px;
+              border: 2px solid $color-primary;
+              border-radius: 15px;
+              &::before {
+                position: absolute;
+                content: "";
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background: $bg-white;
+                left: -5px;
+                top: -10px;
+              }
+              ul {
+                padding-left: 20px;
+              }
+            }
+            img {
+              z-index: 1;
+              margin-left: -90px;
+              position: relative;
+              @include media-breakpoint-down(lg) {
+                margin-left: 0;
+                margin-top: 50px;
+              }
+            }
+          }
+        }
+        &.forth-slide {
+          background-size: cover;
+          background-repeat: no-repeat;
+          ul {
+            li {
+              font-size: 24px;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      .card--overflow-number {
+        margin-bottom: 25px;
+        .card__inner {
+          text-align: left;
+        }
+        .card__number::before {
+          display: none;
+        }
+      }
     }
-    .carousel-item{
-        &__inner{
-            &.first-slide .card-group{
-                width: 65%;
-                margin: auto;
-                @include media-breakpoint-down(xl){
-                    width: 90%;
-                }
-            }
-            &.second-slide, &.third-slide{
-                .card--overflow-number .card__inner::before{
-                    width: 70%;
-                }
-            }
-            &.third-slide{
-                .patient-card{
-                    width: 70%;
-                    margin: auto;
-                    @include media-breakpoint-down(xl){
-                        width: 90%;
-                    }
-                    &__content{
-                        position: relative;
-                        padding: 25px 75px 25px 25px;
-                        border: 2px solid $color-primary;
-                        border-radius: 15px;
-                        &::before{
-                            position: absolute;
-                            content: "";
-                            width: 40px;
-                            height: 40px;
-                            border-radius: 50%;
-                            background: $bg-white;
-                            left: -5px;
-                            top: -10px;
-                        }
-                        ul{
-                            padding-left: 20px;
-                        }
-                    }
-                    img{
-                        z-index: 1;
-                        margin-left: -90px;
-                        position: relative;
-                        @include media-breakpoint-down(lg){
-                            margin-left: 0;
-                            margin-top: 50px;
-                        }
-                    }
-                }
-            }
-            &.forth-slide{
-                ul{
-                    li{
-                        font-size: 24px;
-                        font-weight: bold;
-                    }
-                }
-            }
-        }
-        .card--overflow-number {
-            margin-bottom: 25px;
-            .card__inner{
-                text-align: left;
-            }
-            .card__number::before{
-                display: none;
-            }
-        }
+
+    .carousel-control-prev {
+      width: 50px;
+      height: 50px;
+      top: calc(50vh - 80px);
+      left: 20px;
+      background: $bg-secondary;
+      opacity: 1;
+      border-radius: 5px;
     }
-   
-    .carousel-control-prev{
-        width: 50px;
-        height: 50px;
-        top: calc(50vh - 80px);
-        left: 20px;
-        background: $bg-secondary;
-        opacity: 1;
-        border-radius: 5px;
-    }
-    .carousel-control-next{
-        width: 50px;
-        height: 50px;
-        top: calc(50vh - 80px);
-        right: 20px;
-        background: $bg-secondary;
-        opacity: 1;
-        border-radius: 5px;
+    .carousel-control-next {
+      width: 50px;
+      height: 50px;
+      top: calc(50vh - 80px);
+      right: 20px;
+      background: $bg-secondary;
+      opacity: 1;
+      border-radius: 5px;
     }
     .carousel-control-prev-icon,
-    .carousel-control-next-icon{
-        filter: brightness(0) invert(1);
+    .carousel-control-next-icon {
+      filter: brightness(0) invert(1);
     }
-    &.carousel-dark{
-        .carousel-indicators{
-            bottom: auto;
-            top: 10px;
-            [data-bs-target]{
-                width: 50px;
-                height: 5px;
-                border-radius: 11px;
-                background-color: $bg-gray;
-            }
-            .active{
-                background-color: $bg-secondary;
-            }
+    .carousel-control-prev-icon {
+      background-image: url("../images/chevron-left.svg");
+    }
+    .carousel-control-next-icon {
+      background-image: url("../images/chevron-right.svg");
+    }
+    &.carousel-dark {
+      .carousel-indicators {
+        bottom: auto;
+        top: 10px;
+        [data-bs-target] {
+          width: 50px;
+          height: 5px;
+          border-radius: 11px;
+          background-color: $bg-gray;
         }
+        .active {
+          background-color: $bg-secondary;
+        }
+      }
     }
+  }
 }
