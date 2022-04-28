@@ -5,7 +5,7 @@
  */
 
 module.exports = {
-
+  pathPrefix:"/eular-interactive",
   plugins: [
     "gatsby-plugin-sass",
     "gatsby-transformer-remark",
